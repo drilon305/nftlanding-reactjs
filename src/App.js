@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+/* eslint-disable react/jsx-no-undef */
+import React from 'react'
+import Home from './components/Home'
+import Navbar from './components/Navbar'
+import Release from './components/Release'
+import ScrollToTop from './components/ScrollToTop'
+import SignUp from './components/SignUp'
+import SuperRare from './components/SuperRare'
+import Free from './components/Free'
+import Like from './components/Like'
+import Clients from './components/Clients'
+import Footer from './components/Like'
+import "./sass/index.scss";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default function App() {
+  return <div className='app-container'>
+     <ScrollToTop />
+      <Navbar />
+      <Home />
+      <Free />
+      <Clients />
+      <SuperRare />
+      <Release />
+      <Like />
+      <SignUp />
+      <Footer />
+  </div>
 }
-
-export default App;
