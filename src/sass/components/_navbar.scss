@@ -4,7 +4,32 @@ nav {
     align-items: center;
     .brand-container {
         .brand {
-            
+            img {
+                width: 100%;
+            }
+        }
+        .toggle-container {
+            display: none;
         }
     }
+    .links-container {
+        .links {
+            list-style: none;
+            display: flex;
+            gap: 3rem;
+            li {
+                a {
+                    color: var(--accent-color1);
+                    text-decoration: none;
+                }
+                &:last-of-type {
+                    a {
+                        color: var(--pink)
+                    }
+                    
+                }
+            }
+        }
+    }
+
 }
