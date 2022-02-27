@@ -9,7 +9,7 @@ import SuperRare from './components/SuperRare'
 import Free from './components/Free'
 import Like from './components/Like'
 import Clients from './components/Clients'
-import Footer from './components/Like'
+import Footer from './components/Footer'
 import "./sass/index.scss";
 
 export default function App() {
