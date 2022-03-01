@@ -5,7 +5,7 @@ import { ImSun } from "react-icons/im";
 import { BsFillMoonFill } from "react-icons/bs";
 import logo from "../assets/logo.png";
 
-export default function Navbar() {
+export default function Navbar({ changeTheme, currentTheme}) {
   const [navState, setNavState] = useState(false)
 
   return <nav>
@@ -15,7 +15,9 @@ export default function Navbar() {
         </div>
         <div className="toggle-container">
           <div className="toggle"></div>
-          <div className="mode"></div>
+          <div className="mode">
+          {currentTheme === 'dark' ? <ImSun className="light" /> : <BsFillMoonFill className="dark" />}
+          </div>
         </div>
       </div>
       <div className="links-container">
@@ -24,6 +26,9 @@ export default function Navbar() {
           <li><a href="#">About</a></li>
           <li><a href="#">Launch</a></li>
           <li><a href="#">SignUp</a></li>
+          <li onClick={changeTheme}>
+            {currentTheme === 'dark' ? <ImSun className="light" /> : <BsFillMoonFill className="dark" />}
+          </li>
         </ul>
       </div>
   </nav>
