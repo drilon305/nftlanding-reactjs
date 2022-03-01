@@ -1,0 +1,35 @@
+.scrollTop {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 100;
+    bottom: 5%;
+    right: 5%;
+    width: 4rem;
+    height: 4rem;
+    border: 3px solid transparent;
+    border-radius: 3rem;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)),
+    linear-gradient(101deg, var(--pink), var(--orange));
+    background-origin: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-clip: content-box, border-box;
+    box-shadow: 2px 1000px 1px var(--background) inset;
+    transition: 0.5s ease-in-out;
+    &:hover {
+        box-shadow: none;
+    }
+    a {
+        svg {
+            font-size: 2rem;
+            color: var(--accent-color1);
+        }
+    }
+}
+
+.visible {
+    visibility: visible;
+    opacity: 1;
+}
