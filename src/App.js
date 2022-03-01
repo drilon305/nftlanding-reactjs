@@ -14,6 +14,12 @@ import Footer from './components/Footer'
 import "./sass/index.scss";
 
 export default function App() {
+const [theme, setTheme] = useState('dark')
+
+const changeTheme = () => {
+  theme === 'dark' ? setTheme('light') : setTheme('dark')
+}
+
   useEffect(() => {
     const registerAnimations = () => {
       const sr = scrollreveal({
@@ -38,9 +44,9 @@ export default function App() {
     nav[0].style.transform = 'none';
   }, 1500)
 
-  return <div className='app-container'>
+  return <div className='app-container' data-theme={theme}>
      <ScrollToTop />
-      <Navbar />
+      <Navbar changeTheme={changeTheme} currentTheme={theme} />
       <Home />
       <Free />
       <Clients />
