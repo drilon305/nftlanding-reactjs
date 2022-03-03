@@ -23,4 +23,19 @@
         justify-content: space-evenly;
         gap: 5rem;
     }
+    @media screen and (min-width: 280px) and (max-width: 1080px) {
+        padding: 1rem 2rem;
+        width: 100vw;
+        .cards {
+            overflow: auto;
+            justify-content: flex-start;
+            gap: 2rem;
+            &::-webkit-scrollbar {
+                display: none;
+            }
+            .card {
+                zoom: 0.7;
+            }
+        }
+    }
 }
