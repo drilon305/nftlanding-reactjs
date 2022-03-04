@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/nftlanding-reactjs/static/css/main.177b6cf8.css",
+    "main.css": "/nftlanding-reactjs/static/css/main.26d25b63.css",
     "main.js": "/nftlanding-reactjs/static/js/main.2919eb8f.js",
     "static/media/release1.png": "/nftlanding-reactjs/static/media/release1.0c482aba7d6da2c3e9bb.png",
     "static/media/home.png": "/nftlanding-reactjs/static/media/home.7fc4253ec840bd813401.png",
@@ -11,11 +11,11 @@
     "static/media/super1.png": "/nftlanding-reactjs/static/media/super1.1fbdfb3ac7255099ffbb.png",
     "static/media/super3.png": "/nftlanding-reactjs/static/media/super3.190d195b791351c19c67.png",
     "index.html": "/nftlanding-reactjs/index.html",
-    "main.177b6cf8.css.map": "/nftlanding-reactjs/static/css/main.177b6cf8.css.map",
+    "main.26d25b63.css.map": "/nftlanding-reactjs/static/css/main.26d25b63.css.map",
     "main.2919eb8f.js.map": "/nftlanding-reactjs/static/js/main.2919eb8f.js.map"
   },
   "entrypoints": [
-    "static/css/main.177b6cf8.css",
+    "static/css/main.26d25b63.css",
     "static/js/main.2919eb8f.js"
   ]
 }
